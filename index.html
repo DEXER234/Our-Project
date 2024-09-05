@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Tourism Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold" style="margin-left: 20px;">Wanderlust Travels</h1>
+            <nav>
+                <ul class="flex space-x-6" style="margin-right: 20px;">
+                    <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+                    <li><a href="#destinations" class="hover:text-yellow-400">Destinations</a></li>
+                    <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen" style="background-image: url('pexels-andrejcook-131723.jpg'); background-repeat: no-repeat;
+  background-attachment: fixed;">
+    <a class="scrollbtn" href="#"><i class="fa-solid fa-arrow-up" ></i></a>
+        <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+            <div class="text-center text-white">
+                <h2 class="text-5xl font-bold mb-6">Explore the World with Us</h2>
+                <p class="text-xl mb-8">Discover new destinations, cultures, and experiences.</p>
+                <a href="#destinations" class="bg-yellow-400 text-white px-8 py-4 rounded-full text-xl font-semibold hover:bg-yellow-500">Start Your Journey</a>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-400 py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white text-center mb-4">Find Your Next Destination</h2>
+            <div class="flex justify-center">
+                <input type="text" placeholder="Search destinations..." class="w-full md:w-1/2 px-4 py-2 rounded-l-lg focus:outline-none">
+                <button class="bg-white text-blue-600 px-6 py-2 rounded-r-lg hover:bg-gray-100">Search</button>
+            </div>
+        </div>
+    </section>
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-16 bg-gray-300">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Featured Destinations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Destination 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img src="pexels-pixabay-163872.jpg" alt="Beach" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Tropical Beaches</h3>
+                    <p class="text-gray-700">Relax on pristine beaches with crystal clear waters and enjoy the warm sun.</p>
+                </div>
+                <!-- Destination 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img src="pexels-pixabay-355747.jpg" alt="Mountains" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Mountain Adventures</h3>
+                    <p class="text-gray-700">Explore majestic mountains and embark on thrilling hikes.</p>
+                </div>
+                <!-- Destination 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img src="pexels-navneet-shanu-202773-672630.jpg" alt="City" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Urban Escapes</h3>
+                    <p class="text-gray-700">Discover the vibrant culture and nightlife of the world's greatest cities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-12 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Popular Travel Destination</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Package 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="Rishikesh-Uttarakhand-India.jpg" alt="Rishikesh" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Rishikesh</h3>
+                        <p class="text-gray-600 mt-2">Rishikesh, where spirituality meets adventure.</p>
+                        <br>
+                        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded mt-4 inline-block hover:bg-blue-700">Explore Now</a>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="Best-Time-to-Vis-Goa-India-scaled.jpg" alt="Goa" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Goa</h3>
+                        <p class="text-gray-600 mt-2">Witness the sunshine with full of greatness.</p>
+                        <br>
+                        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded mt-4 inline-block hover:bg-blue-700">Explore Now</a>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="manali-weather-in-winter-best-time-to-visit-manali.jpg" alt="Manali" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Manali</h3>
+                        <p class="text-gray-600 mt-2">In the embrace of nature, Manali whispers secrets.</p>
+                        <br>
+                        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded mt-4 inline-block hover:bg-blue-700">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-6 rounded-lg bg-blue-900">
+                    <h3 class="text-2xl font-semibold mb-4">Custom Travel Plans</h3>
+                    <p class="text-gray-300">We tailor travel itineraries to fit your specific needs and interests.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="p-6 rounded-lg bg-blue-900">
+                    <h3 class="text-2xl font-semibold mb-4">Group Tours</h3>
+                    <p class="text-gray-300">Join our group tours and explore new destinations with like-minded travelers.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="p-6 rounded-lg bg-blue-900">
+                    <h3 class="text-2xl font-semibold mb-4">24/7 Customer Support</h3>
+                    <p class="text-gray-300">Our team is available around the clock to assist you during your travels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Why Choose Us?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Detail 1 -->
+                <div class="p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Experienced Guides</h3>
+                    <p class="text-gray-700">Our travel guides are highly experienced and knowledgeable about the destinations we offer. They ensure that you have a safe and enriching experience.</p>
+                </div>
+                <!-- Detail 2 -->
+                <div class="p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Affordable Prices</h3>
+                    <p class="text-gray-700">We offer competitive pricing without compromising on quality. Get the best deals for your next vacation.</p>
+                </div>
+                <!-- Detail 3 -->
+                <div class="p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Wide Range of Destinations</h3>
+                    <p class="text-gray-700">Whether you're looking for a beach getaway, a mountain adventure, or an urban escape, we have something for everyone.</p>
+                </div>
+                <!-- Detail 4 -->
+                <div class="p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Personalized Service</h3>
+                    <p class="text-gray-700">We take the time to understand your preferences and create a travel experience that is uniquely yours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p class="text-lg">Contact Us</p>
+            <p class="text-sm mb-4">Email: support@wanderlusttravels.com | Phone: +123 456 7890</p>
+            <p class="text-xs">© 2024 Wanderlust Travels. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
