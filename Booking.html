@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Booking Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* styles.css */
+body {
+    font-family: 'Poppins', sans-serif; /* Background remains the same */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.booking-form {
+    background-color: #e3f9ff53; /* Form background remains the same */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+
+.booking-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin: 0px -10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #4a90e2;
+}
+
+/* Neumorphic Book Button with Light Blue */
+.book-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #e0f7fa; /* Light blue button color */
+    color: #00796b; /* Darker blue-green text color */
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 8px 8px 15px #090909, -8px -8px 15px #ffffff00; /* Neumorphic shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.book-btn:hover {
+    box-shadow: inset 8px 8px 15px #54bcca, inset -8px -8px 15px #ffffff; /* Inset shadows for pressed effect */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.book-btn:active {
+    box-shadow: inset 5px 5px 10px #54bcca, inset -5px -5px 10px #ffffff; /* Stronger inset for active press */
+    transform: translateY(0); /* Reset position on press */
+}
+
+</style>
+<body style="background-image: url('kap.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+
+<div class="booking-form">
+    <h2>Search Your Plan</h2>
+    <form>
+        <div class="input-group">
+            <label for="source">Source</label>
+            <input type="text" id="source" placeholder="Enter your starting location" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" placeholder="Enter your destination" required>
+        </div>
+
+        <div class="input-group">
+            <label for="days">Number of days</label>
+            <input type="number" id="days" min="1" placeholder="Number of days" required>
+        </div>
+
+        <button type="submit" class="book-btn">Search</button>
+    </form>
+</div>
+
+</body>
+</html>
