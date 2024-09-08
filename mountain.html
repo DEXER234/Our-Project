@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Grid Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(#000b71 , #ffffff);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            cursor: pointer;
+            background-color: rgb(207, 207, 207);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.25em;
+            margin: 0 0 10px;
+        }
+
+        .card-text {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Discover the Majestic Mountain Escapes of India</h1>
+</header>
+
+<div class="container">
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="manali.jpg" alt="Card Image 1">
+        <div class="card-body">
+            <h2 class="card-title">Manali (Himachal Pradesh)</h2>
+            <p class="card-text">A popular hill station, Manali offers snow-capped mountains, lush valleys, and adventure activities like trekking, skiing, and paragliding. Perfect for nature lovers and thrill-seekers.</p>
+        </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="card">
+        <img src="Ladhak.jpg" alt="Card Image 2">
+        <div class="card-body">
+            <h2 class="card-title">Leh-Ladakh (Jammu & Kashmir)
+            </h2>
+            <p class="card-text">Known for its stunning landscapes, high-altitude lakes, and Buddhist monasteries, Leh-Ladakh is a paradise for adventure enthusiasts and those seeking serenity amidst rugged terrains.</p>
+        </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="card">
+        <img src="shimla.jpg" alt="Card Image 3">
+        <div class="card-body">
+            <h2 class="card-title">Shimla (Himachal Pradesh)</h2>
+            <p class="card-text">The "Queen of Hills," Shimla is famous for its colonial architecture, pleasant weather, and beautiful snow-covered peaks, making it a top destination for family vacations and honeymoons.</p>
+        </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="card">
+        <img src="Darjeeling.jpg" alt="Card Image 4">
+        <div class="card-body">
+            <h2 class="card-title">Darjeeling (West Bengal)</h2>
+            <p class="card-text">Renowned for its tea plantations and the iconic Toy Train, Darjeeling offers mesmerizing views of the Himalayas and a serene atmosphere for travelers seeking relaxation.</p>
+        </div>
+    </div>
+    <!-- Card 5 -->
+    <div class="card">
+        <img src="munnar.jpg" alt="Card Image 5">
+        <div class="card-body">
+            <h2 class="card-title">Munnar (Kerala)</h2>
+            <p class="card-text">A charming hill station with sprawling tea plantations and mist-covered hills, Munnar is a perfect retreat for honeymooners and nature lovers looking to unwind in tranquility.</p>
+        </div>
+    </div>
+    <!-- Card 6 -->
+    <div class="card">
+        <img src="nainital.jpg" alt="Card Image 6">
+        <div class="card-body">
+            <h2 class="card-title">Nainital (Uttarakhand)</h2>
+            <p class="card-text">Nestled around Naini Lake, Nainital is a scenic town known for boating, serene views, and surrounding hilltop trails, ideal for families and couples alike.</p>
+        </div>
+    </div>
+    <!-- Card 7 -->
+    <div class="card">
+        <img src="ooty.jpg" alt="Card Image 7">
+        <div class="card-body">
+            <h2 class="card-title">Ooty (Tamil Nadu)</h2>
+            <p class="card-text">Ooty, the "Queen of the Nilgiris," is known for its lush green hills, tea estates, and the picturesque Nilgiri Mountain Railway, offering a peaceful escape in nature.</p>
+        </div>
+    </div>
+    <!-- Card 8 -->
+    <div class="card">
+        <img src="gangtok.jpg" alt="Card Image 8">
+        <div class="card-body">
+            <h2 class="card-title">Gangtok (Sikkim)</h2>
+            <p class="card-text">Gangtok, the capital of Sikkim, offers breathtaking views of the mighty Kanchenjunga and is a hub of Buddhist culture, monasteries, and adventure activities like trekking.</p>
+        </div>
+    </div>
+    <!-- Card 9 -->
+    <div class="card">
+        <img src="Auli.jpg" alt="Card Image 9">
+        <div class="card-body">
+            <h2 class="card-title">Auli (Uttarakhand)</h2>
+            <p class="card-text">Auli is a premier ski destination offering stunning views of the Himalayas, perfect for adventure lovers during winter and hikers in the summer.</p>
+        </div>
+    </div>
+    <!-- Card 10 -->
+    <div class="card">
+        <img src="mount_abu.jpg" alt="Card Image 10">
+        <div class="card-body">
+            <h2 class="card-title">Mount Abu (Rajasthan)</h2>
+            <p class="card-text">Mount Abu, the only hill station in Rajasthan, is known for its cool climate, stunning landscapes, and the famous Dilwara Temples, making it a unique retreat in the desert state.</p>
+        </div>
+    </div>
+    <!-- Card 11 -->
+    <div class="card">
+        <img src="Kalimpong.jpg" alt="Card Image 11">
+        <div class="card-body">
+            <h2 class="card-title">Kalimpong (West Bengal)</h2>
+            <p class="card-text">A peaceful hill station known for its colonial-era architecture, vibrant monasteries, and panoramic views of the Teesta River, Kalimpong is a serene getaway for nature lovers and culture enthusiasts.</p>
+        </div>
+    </div>
+    <!-- Card 12 -->
+    <div class="card">
+        <img src="Mussoorie.jpg" alt="Card Image 12">
+        <div class="card-body">
+            <h2 class="card-title">Mussoorie (Uttarakhand)</h2>
+            <p class="card-text">Often called the "Queen of the Hills," Mussoorie offers breathtaking views of the Himalayas, lush greenery, and cascading waterfalls, making it a popular destination for families and honeymooners.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
