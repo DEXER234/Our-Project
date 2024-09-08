@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Grid Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background: linear-gradient(#000b71, #ffffff);
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .card {
+        cursor: pointer;
+        background-color: rgb(207, 207, 207);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        padding: 15px;
+      }
+
+      .card-title {
+        font-size: 1.25em;
+        margin: 0 0 10px;
+      }
+
+      .card-text {
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Explore The Breathtaking Beaches in India</h1>
+    </header>
+
+    <div class="container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="mumbai.jpeg" alt="Card Image 1" />
+        <div class="card-body">
+          <h2 class="card-title">Mumbai(Maharashtra)</h2>
+          <p class="card-text">
+            Mumbai is the financial capital of India and a hub of Bollywood
+            cinema. It's famous for the Gateway of India, Marine Drive, and the
+            bustling local markets like Colaba Causeway. The city's nightlife
+            and street food culture are also major attractions
+          </p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="Del.jpeg" alt="Card Image 2" />
+        <div class="card-body">
+          <h2 class="card-title">Delhi</h2>
+          <p class="card-text">
+            The capital city of India, Delhi, is a perfect blend of historical
+            monuments and modern amenities. The city is home to iconic
+            structures like the Red Fort, Qutub Minar, and India Gate.
+          </p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="Ben.jpeg" alt="Card Image 3" />
+        <div class="card-body">
+          <h2 class="card-title">Bengaluru, Karnataka</h2>
+          <p class="card-text">
+            Bengaluru is the tech hub of the country. The city is known for its
+            pleasant weather, sprawling parks like Cubbon Park, and a thriving
+            food and café culture. The city's nightlife is also quite vibrant,
+            making it a favorite among young professionals.
+          </p>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="Kol.jpg" alt="Card Image 4" />
+        <div class="card-body">
+          <h2 class="card-title">Kolkata, West Bengal</h2>
+          <p class="card-text">
+            Kolkata, the "City of Joy," is known for its rich cultural heritage
+            and colonial architecture. Must-visit places include the Victoria
+            Memorial, Howrah Bridge, and the vibrant markets of New Market.
+          </p>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="Che.jpg" alt="Card Image 5" />
+        <div class="card-body">
+          <h2 class="card-title">Chennai, Tamil Nadu</h2>
+          <p class="card-text">
+            Chennai, often referred to as the "Gateway to South India," is known
+            for its deep-rooted traditions, temples, and classical music. Marina
+            Beach, Kapaleeshwarar Temple, and the colonial Fort St.
+          </p>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="card">
+        <img src="Pun.jpeg" alt="Card Image 6" />
+        <div class="card-body">
+          <h2 class="card-title">Pune, Maharashtra</h2>
+          <p class="card-text">
+            Pune is known as the "Oxford of the East" due to its many
+            educational institutions. The city offers a mix of historical sites
+            like Shaniwar Wada and Aga Khan Palace, along with modern
+            attractions like Koregaon Park, known for its lively café and
+            nightlife scene.
+          </p>
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="card">
+        <img src="Hyd.jpeg" alt="Card Image 7" />
+        <div class="card-body">
+          <h2 class="card-title">Hyderabad, Telangana</h2>
+          <p class="card-text">
+            Hyderabad is known as the "City of Pearls" due to its historical
+            association with pearl trading. The city blends its rich history
+            with modernity, with landmarks like Charminar, Golconda Fort, and
+            the contemporary HITECH City. The famous Hyderabadi biryani is a
+            must-try culinary experience.
+          </p>
+        </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="card">
+        <img src="Jai.jpeg" alt="Card Image 8" />
+        <div class="card-body">
+          <h2 class="card-title">Jaipur, Rajasthan</h2>
+          <p class="card-text">
+            The capital city of Rajasthan, Jaipur, is part of the famous Golden
+            Triangle tourist circuit. Known as the "Pink City," it is home to
+            grand palaces and forts like Hawa Mahal, City Palace, and Amber
+            Fort. Jaipur is also famous for its traditional Rajasthani jewelry,
+            textiles, and handicrafts.
+          </p>
+        </div>
+      </div>
+      <!-- Card 9 -->
+      <div class="card">
+        <img src="Ahm.jpg" alt="Card Image 9" />
+        <div class="card-body">
+          <h2 class="card-title">Ahmedabad, Gujarat</h2>
+          <p class="card-text">
+            Ahmedabad is a UNESCO World Heritage City, known for its blend of
+            old and new. The Sabarmati Ashram, once home to Mahatma Gandhi, is a
+            major attraction. The city also has modern shopping malls, museums,
+            and a thriving street food culture.
+          </p>
+        </div>
+      </div>
+      <!-- Card 10 -->
+      <div class="card">
+        <img src="Cha.jpeg" alt="Card Image 10" />
+        <div class="card-body">
+          <h2 class="card-title">Chandigarh</h2>
+          <p class="card-text">
+            Chandigarh is one of India’s best-planned cities, designed by the
+            famous architect Le Corbusier. The city is known for its modern
+            architecture, beautiful gardens like the Rock Garden and Rose
+            Garden, and clean, wide roads. Chandigarh serves as the capital for
+            both Haryana and Punjab.
+          </p>
+        </div>
+      </div>
+      <!-- Card 11 -->
+      <div class="card">
+        <img src="Luc.jpeg" alt="Card Image 11" />
+        <div class="card-body">
+          <h2 class="card-title">Lucknow, Uttar Pradesh</h2>
+          <p class="card-text">
+            Lucknow, the "City of Nawabs," is known for its courtly manners,
+            beautiful gardens, poetry, and delicious cuisine. The city's
+            historical landmarks include the Bara Imambara, Rumi Darwaza, and
+            the British Residency. The famous Tunday Kababi is a must-try for
+            food lovers.
+          </p>
+        </div>
+      </div>
+      <!-- Card 12 -->
+      <div class="card">
+        <img src="Goa.jpg" alt="Card Image 12" />
+        <div class="card-body">
+          <h2 class="card-title">Goa</h2>
+          <p class="card-text">
+            Though more known for its beaches, Goa's urban areas like Panaji and
+            Margao offer a rich blend of Portuguese colonial history, vibrant
+            markets, and beautiful churches. The state is famous for its
+            laid-back lifestyle, vibrant festivals, and eclectic cuisine.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
